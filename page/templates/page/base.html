@@ -1,4 +1,8 @@
+{% load static %}
 <p>
 	<a href="{% url 'page:index' %}">Главная страница</a>
 </p>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
 {% block content %}{% endblock content %}
