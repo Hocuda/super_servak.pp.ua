@@ -4,8 +4,16 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="/home/pi/server/page/templates/page/style.css">
 </head>
 <body>
 	<h1>Магазин продуктов "Олежка"</h1>
+	<h3>Каталог продуктов:</h3>
+	<ul>
+		<li><a href="{% url 'page:index1' %}">Фрукты</a></li>
+		<li><a href="{% url 'page:index2' %}">Овощи</a></li>
+		<li><a href="{% url 'page:index3' %}">Молочная продукция</a></li>
+		<li><a href="{% url 'page:index4' %}">Мясо</a></li>
+	</ul>
 </body>
 </html>
