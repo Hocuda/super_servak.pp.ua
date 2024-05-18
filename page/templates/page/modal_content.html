@@ -1,0 +1,19 @@
+<!-- modal_content.html -->
+
+<!-- Модальное окно -->
+<div id="myModal" class="modal">
+    <!-- Содержимое модального окна -->
+    <div class="modal-content">
+        <!-- Кнопка для закрытия модального окна -->
+        <span class="close" id="closeModalBtn">&times;</span>
+        <!-- Форма всплывающего окна -->
+        <form method="post">
+            {% csrf_token %}
+            <label for="fname">Мясо:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Фрукт:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
+</div>
