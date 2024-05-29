@@ -9,14 +9,23 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/modal.css' %}">
 </head>
 <body>
-    <h1>Магазин продуктов "Олежка"</h1>
-    <h3>Каталог продуктов:</h3>
-    <ul>
-        <li><a href="{% url 'page:index1' %}">Фрукты</a></li>
-        <li><a href="{% url 'page:index2' %}">Овощи</a></li>
-        <li><a href="{% url 'page:index3' %}">Молочная продукция</a></li>
-        <li><a href="{% url 'page:index4' %}">Мясо</a></li>
-    </ul>
+
+	<h1>Магазин продуктов "Олежка"</h1>
+	<h3>Каталог продуктов:</h3>
+	<ul class="products clearfix">
+		<li class="products-wrapper">
+			<a href="{% url 'page:index1' %}" class="product">Фрукты</a>
+		</li>
+		<li class="products-wrapper">
+			<a href="{% url 'page:index2' %}" class="product">Овощи</a>
+		</li>
+		<li class="products-wrapper">
+			<a href="{% url 'page:index3' %}" class="product">Молочная продукция</a>
+		</li>
+		<li class="products-wrapper">
+			<a href="{% url 'page:index4' %}" class="product">Мясо</a>
+		</li>
+	</ul>
 
     <!-- Ссылка для открытия модального окна -->
     <a href="#" id="openModalBtn">Каталог</a>
@@ -25,5 +34,6 @@
     {% include 'page/modal_content.html' %}
 
     <script src="{% static 'js/modal.js' %}"></script>
+
 </body>
 </html>
