@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from .forms import MyForm  # Импортируем вашу форму из forms.py
 
 def index(request):
     """Главная страница"""

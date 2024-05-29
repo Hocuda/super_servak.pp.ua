@@ -9,4 +9,4 @@ urlpatterns = [
 ]
 
 # Добавляем обслуживание статических файлов в режиме разработки
-urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) # todo

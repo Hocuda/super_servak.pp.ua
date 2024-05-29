@@ -1,7 +1,7 @@
 /* Общие стили для всего документа */
 
 body {
-    background-image: url("yablocko.jpg"); /* Устанавливаем фоновое изображение */
+    background-image: url("media/yablocko.jpg"); /* Устанавливаем фоновое изображение */
     background-size: cover; /* Изображение будет масштабировано так, чтобы покрыть всю область фона */
     font-family: Arial, sans-serif; /* Задаем шрифт для всего текста */
     margin: 0; /* Убираем отступы по умолчанию */
@@ -11,7 +11,8 @@ body {
 /* Стили для заголовка */
 
 h1 {
-    color: ghostwhite; /* Задаем цвет текста для заголовка */
+    font-family: Impact, fantasy;
+    color: #7D5E3C; /* Задаем цвет текста для заголовка */
     text-align: center; /* Выравниваем текст по центру */
     padding: 20px 0; /* Задаем внутренние отступы сверху и снизу по 20px, слева и справа - автоматически */
     margin: 0; /* Убираем внешние отступы у заголовка */
@@ -21,6 +22,11 @@ h3 {
     color: ghostwhite;
     -webkit-text-stroke: 0.5px black;
     text-stroke: 1px black;
+}
+
+.qwerty {
+    margin-left: 20px;
+    color: #EAD39C;
 }
 
 /* Стили для блоков продуктов */
@@ -66,3 +72,4 @@ h3 {
     z-index: 0; /* Задаем z-индекс для элемента */
     height: 300px; /* Задаем высоту элемента */
 }
+

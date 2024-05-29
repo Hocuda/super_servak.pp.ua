@@ -11,7 +11,15 @@
 <body>
 
 	<h1>Магазин продуктов "Олежка"</h1>
-	<h3>Каталог продуктов:</h3>
+   
+ 	<a href="#" id="openModalBtn" class="qwerty">Каталог продуктов</a>
+    <!-- Включаем содержимое всплывающего окна -->
+    {% include 'page/modal_content.html' %}
+    <!-- Ссылка для открытия модального окна -->
+    <script src="{% static 'js/modal.js' %}"></script>
+	
+	<h3 class="qwerty">Акции:</h3>
+
 	<ul class="products clearfix">
 		<li class="products-wrapper">
 			<a href="{% url 'page:index1' %}" class="product">Фрукты</a>
@@ -26,14 +34,6 @@
 			<a href="{% url 'page:index4' %}" class="product">Мясо</a>
 		</li>
 	</ul>
-
-    <!-- Ссылка для открытия модального окна -->
-    <a href="#" id="openModalBtn">Каталог</a>
-
-    <!-- Включаем содержимое всплывающего окна -->
-    {% include 'page/modal_content.html' %}
-
-    <script src="{% static 'js/modal.js' %}"></script>
 
 </body>
 </html>
