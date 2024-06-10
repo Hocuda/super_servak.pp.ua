@@ -122,6 +122,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# Указываем Django искать статические файлы в директории page/static
+STATICFILES_DIRS = [
+    BASE_DIR / "page" / "static",
+]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
