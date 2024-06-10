@@ -1,19 +1,50 @@
-<!-- modal_content.html -->
-
-<!-- Модальное окно -->
 <div id="myModal" class="modal">
     <!-- Содержимое модального окна -->
     <div class="modal-content">
         <!-- Кнопка для закрытия модального окна -->
         <span class="close" id="closeModalBtn">&times;</span>
-        <!-- Форма всплывающего окна -->
-        <form method="post">
-            {% csrf_token %}
-            <label for="fname">Мясо:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Фрукт:</label><br>
-            <input type="text" id="lname" name="lname"><br><br>
-            <input type="submit" value="Отправить">
-        </form>
+        <!-- Список продуктов -->
+        <ul>
+            <li>
+                <label for="meat">Мясо:</label>
+                <ul>
+                    <li>Говядина</li>
+                    <li>Свинина</li>
+                    <li>Курица</li>
+                </ul>
+            </li>
+            <li>
+                <label for="fruit">Фрукты:</label>
+                <ul>
+                    <li>Яблоко</li>
+                    <li>Банан</li>
+                    <li>Апельсин</li>
+                </ul>
+            </li>
+            <li>
+                <label for="fruit">Овощи:</label>
+                <ul>
+                    <li>Помидор</li>
+                    <li>Огурец</li>
+                    <li>Картошка</li>
+                </ul>
+            </li>
+            <li>
+                <label for="fruit">Специи:</label>
+                <ul>
+                    <li>Соль</li>
+                    <li>Перец</li>
+                    <li>Тмин</li>
+                </ul>
+            </li>
+            <li>
+                <label for="fruit">Молочная продукция:</label>
+                <ul>
+                    <li>Йогурт</li>
+                    <li>Сметана</li>
+                    <li>Сливочное масло</li>
+                </ul>
+            </li>
+        </ul>
     </div>
 </div>

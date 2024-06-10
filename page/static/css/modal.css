@@ -1,4 +1,3 @@
-
 .modal {
     display: none;
     position: fixed;
@@ -8,13 +7,13 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.4);
-    padding-top: 60px;
+    background-color: rgba(0,0,0,0.4); /* Затемненный фон */
+    padding-top: 60px; /* Отступ сверху */
 }
 
 .modal-content {
-    background-color: #fefefe;
-    margin: 5% auto;
+    background-color: white; /* Цвет фона модального окна */
+    margin: 5% auto; /* Выравнивание по центру */
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
