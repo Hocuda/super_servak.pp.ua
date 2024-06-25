@@ -1,8 +1,19 @@
 {% load static %}
-<p>
-	<a href="{% url 'page:index' %}">Главная страница</a>
-</p>
+<!DOCTYPE html>
+<html>
 <head>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
 </head>
-{% block content %}{% endblock content %}
+<body>
+	<p>
+		<a href="{% url 'page:index' %}" class="qwerty">Главная страница</a>
+	</p>
+	<head>
+	    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	</head>
+	{% block content %}{% endblock content %}
+
+</body>
+</html>

@@ -12,15 +12,11 @@
 }
 
 .modal-content {
-    background-color: #EAD39C; /* Цвет фона модального окна */
-    color: #7D5E3C;
+    background-color: white; /* Цвет фона модального окна */
     margin: 5% auto; /* Выравнивание по центру */
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    background-image: url({% static 'css/media/Свин.jpg' %}); /* Ссылка на ваше изображение */
-    background-size: cover; /* Подгонка изображения под размер контейнера */
-    background-position: center; /* Центрирование изображения */
 }
 
 .close {

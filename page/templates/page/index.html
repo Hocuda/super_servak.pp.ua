@@ -4,36 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Магазин продуктов "Олежка"</title>
+    	<title>Магазин продуктов "Олежка"</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/modal.css' %}">
 </head>
 <body>
 
-	<h1>Магазин продуктов "Олежка"</h1>
+	<h1><big>Магазин продуктов "Олежка"</big></h1>
    
  	<a href="#" id="openModalBtn" class="qwerty">Каталог продуктов</a>
     <!-- Включаем содержимое всплывающего окна -->
     {% include 'page/modal_content.html' %}
     <!-- Ссылка для открытия модального окна -->
     <script src="{% static 'js/modal.js' %}"></script>
-	
-	<h3 class="qwerty">Акции:</h3>
 
-	<ul class="products clearfix">
-		<li class="products-wrapper">
-			<a href="{% url 'page:index1' %}" class="product">Фрукты</a>
-		</li>
-		<li class="products-wrapper">
-			<a href="{% url 'page:index2' %}" class="product">Овощи</a>
-		</li>
-		<li class="products-wrapper">
-			<a href="{% url 'page:index3' %}" class="product">Молочная продукция</a>
-		</li>
-		<li class="products-wrapper">
-			<a href="{% url 'page:index4' %}" class="product">Мясо</a>
-		</li>
-	</ul>
+	<h2 class="qwerty">Акции:</h3>
+
+	<div class="flex">
+
+		<div class="item">
+			<h4>
+				<a href="{% url 'page:index1' %}" class="block">
+					<img src="{% static 'css/media/durex.jpg' %}">
+				Фрукты</a>
+			</h4>
+			<p class="block">Описание этого блока</p>
+		</div>
+
+		<div class="item">
+			<h4>
+				<a href="{% url 'page:index2' %}" class="block">
+					<img src="{% static 'css/media/durex.jpg' %}">
+				Овощи</a>
+			</h4>
+			<p class="block">Описание этого блока</p>
+		</div>
+
+		<div class="item">
+			<h4>
+				<a href="{% url 'page:index3' %}" class="block">
+					<img src="{% static 'css/media/durex.jpg' %}">
+				Молочная продукция</a>
+			</h4>
+			<p class="block">Описание этого блока</p>
+		</div>
+
+		<div class="item">
+			<h4>
+				<a href="{% url 'page:index4' %}" class="block">
+					<img src="{% static 'css/media/durex.jpg' %}">
+				Мясо</a>
+			</h4>
+			<p class="block">Описание этого блока</p>
+		</div>
+
+	</div>
 
 </body>
-</html>
+</html>	
