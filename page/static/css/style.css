@@ -21,9 +21,9 @@ h1 {
 }
 
 .qwerty {
-    margin-left: 20px;
+    margin-left: 50%;
     color: #EAD39C;
-    -webkit-text-stroke: 0.25px #7D5E3C;
+    -webkit-text-stroke: 1px #7D5E3C;
     text-stroke: 0.25px #7D5E3C;
 }
 

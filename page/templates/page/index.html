@@ -11,14 +11,15 @@
 <body>
 
 	<h1><big>Магазин продуктов "Олежка"</big></h1>
-   
- 	<a href="#" id="openModalBtn" class="qwerty">Каталог продуктов</a>
+   	<div class="button">
+ 		<a href="#" id="openModalBtn" class="qwerty"><big>Каталог продуктов</big></a>
+ 	</div>
     <!-- Включаем содержимое всплывающего окна -->
     {% include 'page/modal_content.html' %}
     <!-- Ссылка для открытия модального окна -->
     <script src="{% static 'js/modal.js' %}"></script>
 
-	<h2 class="qwerty">Акции:</h3>
+	<h2 class="qwerty"><big>Акции:</big></h2>
 
 	<div class="flex">
 
