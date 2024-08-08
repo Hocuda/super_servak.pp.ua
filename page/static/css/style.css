@@ -14,7 +14,7 @@ h1 {
     font-family: Impact, fantasy;
     color: #EAD39C; /* Задаем цвет текста для заголовка */
     -webkit-text-stroke: 0.75px #7D5E3C;
-    text-stroke: 0.5px #7D5E3C;
+    text-stroke: 0.75px #7D5E3C;
     text-align: center; /* Выравниваем текст по центру */
     padding: 20px 0; /* Задаем внутренние отступы сверху и снизу по 20px, слева и справа - автоматически */
     margin: 0; /* Убираем внешние отступы у заголовка */
