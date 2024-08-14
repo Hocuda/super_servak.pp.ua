@@ -26,37 +26,41 @@
 		<div class="item">
 			<h4>
 				<a href="{% url 'page:index1' %}" class="block">
-					<img src="{% static 'css/media/durex.jpg' %}">
-				Фрукты</a>
+					<img src="{{ stuff1.image.url }}">
+				{{ stuff1.text }}</a>
 			</h4>
-			<p class="block">Описание этого блока</p>
+			<p class="block">{{ stuff1.price }}</p>
+			<p class="block">{{ stuff1.size }}</p>
 		</div>
 
 		<div class="item">
 			<h4>
 				<a href="{% url 'page:index2' %}" class="block">
-					<img src="{% static 'css/media/durex.jpg' %}">
-				Овощи</a>
+					<img src="{{ stuff2.image.url }}">
+				{{ stuff2.text }}</a>
 			</h4>
-			<p class="block">Описание этого блока</p>
+			<p class="block">{{ stuff2.price }}</p>
+			<p class="block">{{ stuff2.size }}</p>
 		</div>
 
 		<div class="item">
 			<h4>
 				<a href="{% url 'page:index3' %}" class="block">
-					<img src="{% static 'css/media/durex.jpg' %}">
-				Молочная продукция</a>
+					<img src="{{ stuff3.image.url }}">
+				{{ stuff3.text }}</a>
 			</h4>
-			<p class="block">Описание этого блока</p>
+			<p class="block">{{ stuff3.price }}</p>
+			<p class="block">{{ stuff3.size }}</p>
 		</div>
 
 		<div class="item">
 			<h4>
 				<a href="{% url 'page:index4' %}" class="block">
-					<img src="{% static 'css/media/durex.jpg' %}">
-				Мясо</a>
+					<img src="{{ stuff4.image.url }}">
+				{{ stuff4.text }}</a>
 			</h4>
-			<p class="block">Описание этого блока</p>
+			<p class="block">{{ stuff4.price }}</p>
+			<p class="block">{{ stuff4.size }}</p>
 		</div>
 
 	</div>

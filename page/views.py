@@ -1,9 +1,15 @@
+from random import choice
 from django.shortcuts import render
 from .models import Stuff_card
 
 def index(request):
     """Главная страница"""
-    return render(request, 'page/index.html')
+    objects = Stuff_card.objects.all()
+    context = {'stuff1': choice(objects),
+                'stuff2': choice(objects),
+                'stuff3': choice(objects),
+                'stuff4': choice(objects),}
+    return render(request, 'page/index.html', context)
 
 
 def index1(request):
