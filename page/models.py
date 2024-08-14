@@ -1,7 +1,7 @@
 from django.db import models
 
 class Stuff_card(models.Model):
-	image = models.ImageField() 
+	image = models.ImageField(upload_to="image/")
 	text = models.CharField(max_length=50)
 	price = models.TextField()
 	size = models.TextField()

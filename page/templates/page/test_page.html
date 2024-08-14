@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	{% for stuff in stuff_card %}
+		<h1>Linux</h1>
+		<img src="{{ stuff.image.url }}">
+		<p>{{ stuff.text }}</p>
+		<p>{{ stuff.price }}</p>
+		<p>{{ stuff.size }}</p>
+	{% endfor %}
+</body>

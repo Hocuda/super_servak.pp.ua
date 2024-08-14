@@ -120,7 +120,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 STATIC_URL = '/static/'
+MEDIA_URL = ''
+MEDIA_ROOT = BASE_DIR / 'image/'
 
 # Указываем Django искать статические файлы в директории page/static
 STATICFILES_DIRS = [

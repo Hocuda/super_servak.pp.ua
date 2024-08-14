@@ -14,4 +14,6 @@ urlpatterns = [
     path('index3/', views.index3, name='index3'),
     # Страница Мяса
     path('index4/', views.index4, name='index4'),
+    # Тестовая страница
+    path('test_page/', views.test_page, name='test_page'),
 ]

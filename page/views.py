@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Stuff_card
 
 def index(request):
     """Главная страница"""
@@ -23,3 +24,10 @@ def index3(request):
 def index4(request):
     """Страница 'напитки'"""
     return render(request, 'page/index4.html')
+
+
+def test_page(request):
+    """Страница для теста модели stuff_card"""
+    stuff_card = Stuff_card.objects.all()
+    context = {'stuff_card': stuff_card}
+    return render(request, 'page/test_page.html', context)
