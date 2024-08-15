@@ -43,9 +43,15 @@ h1 {
 .item {
   width: 20%;
   margin-right: 20px;
+  position: relative; 
+}
+
+.item a {
+  display: block;
 }
 
 .item img {
+  height: auto;
   display: block;
   max-width: 100%
 }
@@ -60,4 +66,26 @@ h1 {
 .item p {
   margin: 6px 0;
   font-size: 1vw;
+}
+
+.item .block:first-of-type {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+}
+
+.item .block:last-of-type {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  max-width: calc(100% - 20px); /* Учитывает отступы */
 }
