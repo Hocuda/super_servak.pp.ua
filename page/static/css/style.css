@@ -1,91 +1,98 @@
 /* Общие стили для всего документа */
 
 body {
-    background-image: url("media/background1.jpeg"); /* Устанавливаем фоновое изображение */
-    background-size: cover; /* Изображение будет масштабировано так, чтобы покрыть всю область фона */
-    font-family: Arial, sans-serif; /* Задаем шрифт для всего текста */
-    margin: 0; /* Убираем отступы по умолчанию */
-    padding: 0; /* Убираем внутренние отступы по умолчанию */
+  background-image: url("media/background1.jpeg"); /* Устанавливаем фоновое изображение */
+  background-size: cover; /* Изображение будет масштабировано так, чтобы покрыть всю область фона */
+  font-family: Arial, sans-serif; /* Задаем шрифт для всего текста */
+  margin: 0; /* Убираем отступы по умолчанию */
+  padding: 0; /* Убираем внутренние отступы по умолчанию */
 }
 
 /* Стили для заголовка */
 
 h1 {
-    font-family: Impact, fantasy;
-    color: #EAD39C; /* Задаем цвет текста для заголовка */
-    -webkit-text-stroke: 0.75px #7D5E3C;
-    text-stroke: 0.75px #7D5E3C;
-    text-align: center; /* Выравниваем текст по центру */
-    padding: 20px 0; /* Задаем внутренние отступы сверху и снизу по 20px, слева и справа - автоматически */
-    margin: 0; /* Убираем внешние отступы у заголовка */
+  font-family: Impact, fantasy;
+  color: #EAD39C; /* Задаем цвет текста для заголовка */
+  -webkit-text-stroke: 0.75px #7D5E3C;
+  text-stroke: 0.75px #7D5E3C;
+  text-align: center; /* Выравниваем текст по центру */
+  padding: 20px 0; /* Задаем внутренние отступы сверху и снизу по 20px, слева и справа - автоматически */
+  margin: 0; /* Убираем внешние отступы у заголовка */
 }
 
 .qwerty {
-    margin-left: 50%;
-    color: #EAD39C;
-    -webkit-text-stroke: 1px #7D5E3C;
-    text-stroke: 0.25px #7D5E3C;
+  margin-left: 46.5%;
+  color: #EAD39C;
+  -webkit-text-stroke: 1px #7D5E3C;
+  text-stroke: 0.25px #7D5E3C;
 }
 
 .block {
-    color: #EAD39C;
-    font-size: 30px;
-    -webkit-text-stroke: 0.75px #7D5E3C;
-    text-stroke: 0.5px #7D5E3C;
+  color: #EAD39C;
+  font-size: 30px;
+  -webkit-text-stroke: 0.75px #7D5E3C;
+  text-stroke: 0.5px #7D5E3C;
 }
 /* Стили для блоков продуктов */
 
 .flex {
-  display: flex;
-  justify-content: center;
+display: flex;
+justify-content: center;
 }
 
 .item {
-  width: 20%;
-  margin-right: 20px;
-  position: relative; 
+width: 20%;
+margin-right: 20px;
+position: relative; 
+}
+
+.item .block {
+position: absolute;
 }
 
 .item a {
-  display: block;
+display: block;
 }
 
 .item img {
-  height: auto;
-  display: block;
-  max-width: 100%
+height: auto;
+display: block;
+max-width: 100%
 }
 
 .item h4 {
-  margin: 0;
-  text-transform: uppercase;
-  color: #b9f2ff;
-  font-size: 1.3vw;
+margin: 0;
+text-transform: uppercase;
+color: #b9f2ff;
+font-size: 1.3vw;
 }
 
 .item p {
-  margin: 6px 0;
-  font-size: 1vw;
+margin: 6px 0;
+font-size: 1vw;
 }
 
 .item .block:first-of-type {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 14px;
-  font-weight: bold;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 10px;
+position: absolute;
+top: 10px;
+left: 10px;
+font-size: 14px;
+font-weight: bold;
+background-color: #EAD39C;
+padding: 10px;
+border: 2px solid #7D5E3C;
+transform: translateY(6px);
 }
 
 .item .block:last-of-type {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  max-width: calc(100% - 20px); /* Учитывает отступы */
+position: absolute;
+top: 16px;
+right: 10px;
+padding: 10px;
+border: 2px solid #7D5E3C;  
+background-color: #EAD39C;
+font-size: 16px;
+font-weight: bold;
+text-align: center;
+max-width: calc(100% - 20px); /* Учитывает отступы */
 }
