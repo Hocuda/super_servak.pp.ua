@@ -1,0 +1,16 @@
+{% extends 'page/base.html' %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	{% block content %}
+		<img src="{{ product.image.url }}">
+		<p>{{ product.text }}</p>
+		<p>{{ product.price }}</p>
+		<p>{{ product.size }}</p>
+	{% endblock content %}
+</body>

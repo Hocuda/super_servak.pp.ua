@@ -20,10 +20,17 @@ def refrash_index():
         
     return cached_context
 
+
 def index(request):
     """Главная страница"""
     context = refrash_index()
     return render(request, 'page/index.html', context)
+
+
+def product(request, product_id):
+    product = Stuff_card.objects.get(id=product_id)
+    context = {'product': product}
+    return render(request, 'page/product.html', context)
 
 
 def index1(request):
