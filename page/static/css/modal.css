@@ -1,9 +1,12 @@
 .button {
-    margin-right: 83.3%;
+    margin-left: 20px;
+    margin-top: 20px;
     text-align: center;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
 }
 
 .button a {
@@ -46,6 +49,13 @@
     border: 2px solid #7D5E3C;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    text-align: left;
+    position: relative;
+}
+
+.category {
+    color: #7D5E3C;
+    text-decoration: none;
 }
 
 .close {
@@ -79,4 +89,42 @@
 
 .modal-content ul li ul li {
     margin-bottom: 5px;
+}
+
+/* Стили для категорий */
+.category {
+    color: #7D5E3C;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+/* Стили для активного состояния категории */
+.category:hover,
+.category.active {
+    color: #000; /* Цвет текста для активного состояния */
+}
+
+.subcategory {
+    display: none;
+    background-color: #EAD39C;
+    padding: 20px;
+    width: 400px; /* Расширенная ширина для подкатегорийных окон */
+    max-height: 150px; /* Ограничение высоты подкатегории */
+    overflow-y: hidden;  /* Отключаем прокрутку */
+    border: 2px solid #7D5E3C;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: absolute; /* Фиксированное позиционирование */
+    top: 30%; /* Отступ от верхней границы родительского элемента */
+    left: 26%; /* Позиция справа от родительского элемента */
+    transform: translateX(10px); /* Отступ справа от родительского элемента */
+    z-index: 2; /* Убедитесь, что подкатегории поверх всего остального */
+    column-count: 2;  /* Задаем количество колонок */
+    column-gap: 20px; /* Отступ между колонками */
+}
+
+.subcategory.show {
+    display: block;
 }
