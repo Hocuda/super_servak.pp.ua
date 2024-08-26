@@ -33,26 +33,6 @@ def product(request, product_id):
     return render(request, 'page/product.html', context)
 
 
-def index1(request):
-    """Страница 'мясо'"""
-    return render(request, 'page/index1.html')
-
-
-def index2(request):
-    """Страница 'овощи'"""
-    return render(request, 'page/index2.html')
-
-
-def index3(request):
-    """Страница 'фрукты'"""
-    return render(request, 'page/index3.html')
-
-
-def index4(request):
-    """Страница 'напитки'"""
-    return render(request, 'page/index4.html')
-
-
 def test_page(request):
     """Страница для теста модели stuff_card"""
     stuff_card = Stuff_card.objects.all()

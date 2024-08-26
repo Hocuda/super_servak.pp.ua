@@ -26,7 +26,7 @@
 
 		<div class="item">
 			<h4>
-				<a href="{% url 'page:index1' %}" class="block">
+				<a href="{% url 'page:product' stuff1.id %}" class="block">
 					<img src="{{ stuff1.image.url }}">
 				{{ stuff1.text }}</a>
 			</h4>
@@ -36,7 +36,7 @@
 
 		<div class="item">
 			<h4>
-				<a href="{% url 'page:index2' %}" class="block">
+				<a href="{% url 'page:product' stuff2.id %}" class="block">
 					<img src="{{ stuff2.image.url }}">
 				{{ stuff2.text }}</a>
 			</h4>
@@ -46,7 +46,7 @@
 
 		<div class="item">
 			<h4>
-				<a href="{% url 'page:index3' %}" class="block">
+				<a href="{% url 'page:product' stuff3.id %}" class="block">
 					<img src="{{ stuff3.image.url }}">
 				{{ stuff3.text }}</a>
 			</h4>
@@ -56,7 +56,7 @@
 
 		<div class="item">
 			<h4>
-				<a href="{% url 'page:index4' %}" class="block">
+				<a href="{% url 'page:product' stuff4.id %}" class="block">
 					<img src="{{ stuff4.image.url }}">
 				{{ stuff4.text }}</a>
 			</h4>
