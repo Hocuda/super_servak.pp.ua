@@ -1,16 +1,23 @@
 {% extends 'page/base.html' %}
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ product.text }}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 </head>
 <body>
-	{% block content %}
-		<img src="{{ product.image.url }}">
-		<p>{{ product.text }}</p>
-		<p>{{ product.price }}</p>
-		<p>{{ product.size }}</p>
-	{% endblock content %}
+    {% block content %}
+        <div class="product-container">
+            <img src="{{ product.image.url }}" alt="{{ product.text }}" class="product-image">
+            <div class="product-details">
+                <p class="product-description">{{ product.text }}</p>
+                <p class="product-price">Цена: {{ product.price }}</p>
+                <p class="product-size">Вес: {{ product.size }}</p>
+            </div>
+        </div>
+    {% endblock content %}
 </body>
+</html>

@@ -1,12 +1,12 @@
 .button {
-    margin-left: 20px;
-    margin-top: 20px;
+    position: absolute; /* Используем absolute для точного позиционирования */
+    left: 25px; /* Отступ от левой границы */
+    top: 0px; /* Отступ от верхней границы */
     text-align: center;
     display: flex;
     justify-content: center;
-    position: fixed;
-    top: 20px;
-    left: 20px;
+    margin-left: 0; /* Убираем значение margin-left, так как оно может конфликтовать с left */
+    margin-top: 0; /* Убираем значение margin-top, так как оно может конфликтовать с top */
 }
 
 .button a {
