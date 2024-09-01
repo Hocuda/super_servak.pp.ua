@@ -10,7 +10,7 @@ def refrash_index():
     global cached_context, last_time_update
     current_time = time.time()
 
-    if current_time - last_time_update > 0.1 or current_time == None:
+    if current_time - last_time_update > 60 or current_time == None:
         objects = Stuff_card.objects.all()
         select_item = set()
         for i in range(1, 5):
