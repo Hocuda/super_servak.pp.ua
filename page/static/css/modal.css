@@ -1,7 +1,7 @@
 .button {
     position: absolute; /* Используем absolute для точного позиционирования */
-    left: 25px; /* Отступ от левой границы */
-    top: 0px; /* Отступ от верхней границы */
+    left: 1.5%; /* Отступ от левой границы */
+    top: 10%; /* Отступ от верхней границы */
     text-align: center;
     display: flex;
     justify-content: center;
@@ -38,12 +38,12 @@
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.7); 
-    padding-top: 60px;
+    padding-top: 30px; 
 }
 
 .modal-content {
     background-color: #EAD39C; 
-    margin: 5% auto; 
+    margin: 2% auto; 
     padding: 20px;
     width: 60%; 
     border: 2px solid #7D5E3C;
@@ -52,6 +52,7 @@
     text-align: left;
     position: relative;
 }
+
 
 .category {
     color: #7D5E3C;
@@ -111,13 +112,13 @@
     background-color: #EAD39C;
     padding: 20px;
     width: 400px; /* Расширенная ширина для подкатегорийных окон */
-    max-height: 150px; /* Ограничение высоты подкатегории */
+    max-height: 200px; /* Ограничение высоты подкатегории */
     overflow-y: hidden;  /* Отключаем прокрутку */
     border: 2px solid #7D5E3C;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     position: absolute; /* Фиксированное позиционирование */
-    top: 30%; /* Отступ от верхней границы родительского элемента */
+    top: 45%; /* Отступ от верхней границы родительского элемента */
     left: 26%; /* Позиция справа от родительского элемента */
     transform: translateX(10px); /* Отступ справа от родительского элемента */
     z-index: 2; /* Убедитесь, что подкатегории поверх всего остального */
