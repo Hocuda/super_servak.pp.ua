@@ -1,0 +1,21 @@
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 04, 2024 - 20:59:43
+Django version 5.1, using settings 'server.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+[04/Sep/2024 20:59:54] [m"GET /17/%20 HTTP/1.1" 200 776[0m
+[04/Sep/2024 20:59:56] [m"GET /26/%20 HTTP/1.1" 200 774[0m
+[04/Sep/2024 20:59:59] [m"GET /22/%20 HTTP/1.1" 200 869[0m
+[04/Sep/2024 21:00:08] [m"GET /servachok/ HTTP/1.1" 200 10513[0m
+[04/Sep/2024 21:00:10] [m"GET /servachok/auth/group/ HTTP/1.1" 200 8200[0m
+[04/Sep/2024 21:00:10] [m"GET /servachok/jsi18n/ HTTP/1.1" 200 3342[0m
+[04/Sep/2024 21:00:10] [m"GET /static/admin/img/search.svg HTTP/1.1" 200 458[0m
+[04/Sep/2024 21:00:12] [m"GET /servachok/ HTTP/1.1" 200 10513[0m
+[04/Sep/2024 21:00:13] [m"GET /servachok/page/stuff_card/ HTTP/1.1" 200 21799[0m
+[04/Sep/2024 21:00:13] [m"GET /servachok/jsi18n/ HTTP/1.1" 200 3342[0m
+[04/Sep/2024 21:00:17] [m"GET /servachok/page/stuff_card/34/change/ HTTP/1.1" 200 12278[0m
+[04/Sep/2024 21:00:17] [m"GET /servachok/jsi18n/ HTTP/1.1" 200 3342[0m
