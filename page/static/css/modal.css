@@ -53,7 +53,6 @@
     position: relative;
 }
 
-
 .category {
     color: #7D5E3C;
     text-decoration: none;
@@ -107,6 +106,7 @@
     color: #000; /* Цвет текста для активного состояния */
 }
 
+/* Стили для подкатегорий */
 .subcategory {
     display: none;
     background-color: #EAD39C;
@@ -126,6 +126,17 @@
     column-gap: 20px; /* Отступ между колонками */
 }
 
+/* Показываем подкатегории */
 .subcategory.show {
     display: block;
+}
+
+.subcategory a {
+    color: #7D5E3C; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+.subcategory a:hover {
+    color: rgb(0, 0, 0); 
 }
