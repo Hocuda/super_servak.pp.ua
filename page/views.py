@@ -37,6 +37,11 @@ def product(request, product_id):
     return render(request, 'page/product.html', context)
 
 
+def select_product(request, text):
+    context = {'text': text}
+    return render(request, 'page/selected_product.html', context)
+
+
 def test_page(request):
     """Страница для теста модели stuff_card"""
     stuff_card = Stuff_card.objects.all()
