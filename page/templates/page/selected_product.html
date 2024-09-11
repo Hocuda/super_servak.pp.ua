@@ -1,5 +1,13 @@
 {% extends 'page/base.html' %}
 
 {% block content %}
-	<p>{{ text }}</p>
-{% endblock content %}S
+	{% for product in sorted_product_list %}
+		<img src="{{ product.image.url }}">
+		<p>{{ product.text }}</p>
+		<p>{{ product.price }}</p>
+		<p>{{ product.size }}</p>
+	{% empty %}
+		<p>Пока товара не завезли</p>
+	{% endfor %}
+
+{% endblock content %}

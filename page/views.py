@@ -38,7 +38,13 @@ def product(request, product_id):
 
 
 def select_product(request, text):
-    context = {'text': text}
+    products_list = Stuff_card.objects.all()
+    sorted_product_list = set()
+    for item in products_list:
+        if item.global_tag == text or item.local_tag == text:
+            sorted_product_list.add(item)
+
+    context = {'sorted_product_list': sorted_product_list}
     return render(request, 'page/selected_product.html', context)
 
 
