@@ -5,6 +5,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('servachok/', admin.site.urls),
+    path('users/', include('users.urls')),
     path('', include('page.urls')),
 ]
 

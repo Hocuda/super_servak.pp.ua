@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['192.168.0.201', '78.27.131.38', 'superservak.pp.ua', 'google.c
 INSTALLED_APPS = [
     # My apps
     'page',
+    'users',
 
     'django.contrib.admin',
     'django.contrib.auth',
