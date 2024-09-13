@@ -53,3 +53,8 @@ def test_page(request):
     stuff_card = Stuff_card.objects.all()
     context = {'stuff_card': stuff_card}
     return render(request, 'page/test_page.html', context)
+
+
+def account(request):
+    """Страница аккаунта"""
+    return render(request, 'page/account.html')
