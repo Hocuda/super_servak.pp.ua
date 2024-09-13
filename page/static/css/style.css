@@ -150,6 +150,48 @@ h1 {
   border-radius: 10px;
 }
 
+.no-product {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #EAD39C; 
+  background-color: #7D5E3C; 
+  border: 2px solid #EAD39C; 
+  padding: 20px; 
+  margin: 20px auto; 
+  border-radius: 10px; 
+  max-width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+.zxc {
+  margin-top: 20px;
+  color: #EAD39C;
+  -webkit-text-stroke: 1px #7D5E3C;
+  text-stroke: 0.25px #7D5E3C;
+  text-decoration: none;
+  background-color: #EAD39C;
+  padding: 10px 30px;
+  border: 2px solid #7D5E3C;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  width: max-content;
+  margin: 20px auto;
+  transition: background-color 0.3s ease;
+}
+
+.zxc:hover {
+  background-color: #7D5E3C;
+  color: #EAD39C;
+}
+
+
+
 /* Медиа-запросы для разных размеров экранов */
 @media (max-width: 1200px) {
   .item {
@@ -235,6 +277,7 @@ h1 {
     margin: 0 auto;
     padding: 10px 20px;
     font-size: 16px;
+    margin-top: 50px;
   }
 
   .item .block {
@@ -242,5 +285,9 @@ h1 {
     padding: 5px; /* Меньше отступов для компактности */
     max-width: 100%; /* Не превышать ширину контейнера */
     margin-top: 10px; /* Отступ сверху */
+  }
+
+  .subcategory {
+    transform: translateX(-32%) !important;
   }
 }
