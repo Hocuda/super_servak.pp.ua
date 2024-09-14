@@ -1,11 +1,11 @@
-{% extends 'page/base2.html' %}
+{% extends 'page/base.html' %}
 
 {% block content %}
 	{% if user.is_authenticated %}
-		<p>Привет, {{ user.username }}</p>
+		<p class="hello">Привет, {{ user.username }}</p>
 		<form method="post" action="{% url 'users:logout' %}">
 	   		{% csrf_token %}
-			<button type="submit">Log out</button>
+			<button type="submit" class="log-out">Log out</button>
 		</form>
 	{% else %}
 		<p><a href="{% url 'users:login' %}" class="login">Login</a></p>

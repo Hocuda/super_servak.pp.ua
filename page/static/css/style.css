@@ -214,7 +214,7 @@ h1 {
   transform: scale(1.02);  
 }
 
-.login, .register {
+.login, .register, .log-out {
   display: inline-block;
   text-decoration: none;
   background-color: #EAD39C; 
@@ -229,13 +229,58 @@ h1 {
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; 
 }
 
-.login:hover, .register:hover {
+.login:hover, .register:hover, .log-out:hover {
   background-color: #7D5E3C; 
   color: #EAD39C; 
   transform: scale(1.05); 
 }
 p {
   text-align: center;
+}
+
+form {
+  text-align: center; 
+  margin: 20px auto;
+  font-size: 18px;
+  color: #000000; 
+  font-weight: bold; 
+  margin-bottom: 20px; 
+  text-shadow: 
+    1px 1px 0 #FFFFFF, 
+    -1px -1px 0 #FFFFFF,  
+    1px -1px 0 #FFFFFF,  
+    -1px 1px 0 #FFFFFF;
+}
+
+form p {
+  font-size: 18px;
+  color: #000000; 
+  font-weight: bold; 
+  margin: 10px 0; 
+  text-shadow: 
+    1px 1px 0 #FFFFFF, 
+    -1px -1px 0 #FFFFFF,  
+    1px -1px 0 #FFFFFF,  
+    -1px 1px 0 #FFFFFF;
+}
+
+form ul {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+.hello {
+  font-size: 24px !important;
+  color: #7D5E3C !important;
+  font-weight: bold !important;
+  text-align: center !important;
+  margin: 20px 0 !important;
+  text-shadow: 
+    1px 1px 0 #EAD39C, 
+    -1px -1px 0 #EAD39C,  
+    1px -1px 0 #EAD39C,  
+    -1px 1px 0 #EAD39C !important;
 }
 
 /* Медиа-запросы для разных размеров экранов */

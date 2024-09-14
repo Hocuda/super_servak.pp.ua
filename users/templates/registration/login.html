@@ -1,4 +1,4 @@
-{% extends 'page/base2.html' %}
+{% extends 'page/base.html' %}
 
 {% block content %}
 	
@@ -10,7 +10,7 @@
 		{% csrf_token %}
 		{{ form.as_p }}
 
-		<button name="submit">Log in</button>
+		<button name="submit" class="login">Log in</button>
 		<input type="hidden" name="next" value="{% url 'page:account' %}" />
 	</form>
 
