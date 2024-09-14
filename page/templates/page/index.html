@@ -15,9 +15,7 @@
    	<div class="button">
  		<a href="#" id="openModalBtn" class="qwerty"><big>Каталог продуктов</big></a>
  	</div>
- 	<p>
-		<button><a href="{% url 'page:account' %}">Аккаунт</a></button>
-	</p>
+	<a href="{% url 'page:account' %}" class="account">Аккаунт</a>
     <!-- Включаем содержимое всплывающего окна -->
     {% include 'page/modal_content.html' %}
     <!-- Ссылка для открытия модального окна -->

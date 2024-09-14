@@ -188,9 +188,55 @@ h1 {
 .zxc:hover {
   background-color: #7D5E3C;
   color: #EAD39C;
+  transform: scale(1.01); 
 }
 
+.account {
+  position: absolute;
+  top: 20px; 
+  right: 20px; 
+  left: auto;
+  background-color: #EAD39C; 
+  color: #7D5E3C; 
+  border: 2px solid #7D5E3C; 
+  border-radius: 8px; 
+  padding: 10px 20px; 
+  font-size: 16px;
+  font-family: Montserrat, sans-serif; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
 
+.account:hover {
+  background-color: #7D5E3C; 
+  color: #EAD39C;
+  transform: scale(1.02);  
+}
+
+.login, .register {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #EAD39C; 
+  color: #7D5E3C;
+  border: 2px solid #7D5E3C;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  margin: 10px; 
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; 
+}
+
+.login:hover, .register:hover {
+  background-color: #7D5E3C; 
+  color: #EAD39C; 
+  transform: scale(1.05); 
+}
+p {
+  text-align: center;
+}
 
 /* Медиа-запросы для разных размеров экранов */
 @media (max-width: 1200px) {
@@ -289,5 +335,9 @@ h1 {
 
   .subcategory {
     transform: translateX(-32%) !important;
+  }
+
+  .account {
+    margin-top: 60px;
   }
 }
