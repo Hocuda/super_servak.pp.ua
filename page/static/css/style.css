@@ -8,6 +8,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 /* Стили для заголовка */
@@ -24,7 +25,7 @@ h1 {
 
 .qwerty {
   margin-left: 46.5%;
-  margin-top: 15%;
+  margin-top: 10%;
   color: #EAD39C;
   -webkit-text-stroke: 1px #7D5E3C;
   text-stroke: 0.25px #7D5E3C;
@@ -283,6 +284,28 @@ form ul {
     -1px 1px 0 #EAD39C !important;
 }
 
+.footer {
+  background-color: #ead39c83; 
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #2C3E50; 
+  font-family: Arial, sans-serif;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-item {
+  margin: 0;
+}
+
 /* Медиа-запросы для разных размеров экранов */
 @media (max-width: 1200px) {
   .item {
@@ -337,7 +360,7 @@ form ul {
 
 @media (max-width: 480px) {
   .flex {
-    gap: 480px; 
+    gap: 480px; /* ГОВНОКОД! */ 
   }
 
   .item {
@@ -384,5 +407,18 @@ form ul {
 
   .account {
     margin-top: 60px;
+  }
+
+  .footer .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    width: 100%; 
+  }
+
+  .footer {
+    padding: 20px 0; 
+    position: absolute;
+    bottom: -1800px; /* ГОВНОКОД! */
   }
 }
