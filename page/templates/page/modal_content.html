@@ -4,8 +4,9 @@
         <h2>Каталог продуктов</h2>
         <ul>
             <li>
-                <a href="{% url 'page:select_product' 'meat' %}" class="category" data-category="meat">Мясо</a>
+                <a class="category" data-category="meat">Мясо</a>
                 <ul class="subcategory" id="meat">
+                    <li><a href="{% url 'page:select_product' 'meat' %}">Все в "Мясо"</a></li>
                     <li><a href="{% url 'page:select_product' 'pork' %}">Свинина</a></li>
                     <li><a href="{% url 'page:select_product' 'beef' %}">Говядина</a></li>
                     <li><a href="{% url 'page:select_product' 'poluty' %}">Птица</a></li>
@@ -14,18 +15,20 @@
                 </ul>
             </li>
             <li>
-                <a href="{% url 'page:select_product' 'Sausege_and_frankfurters' %}" class="category" data-category="sausage">Колбаса и сосиски</a>
+                <a class="category" data-category="sausage">Колбаса и сосиски</a>
                 <ul class="subcategory" id="sausage">
+                    <li><a href="{% url 'page:select_product' 'sausage_and_frankfurters' %}">Все в "Колбаса и сосиски"</a></li>
                     <li><a href="{% url 'page:select_product' 'boiled_sausage' %}">Колбаса варенная</a></li>
                     <li><a href="{% url 'page:select_product' 'smoked_sausage' %}">Колбаса копченая</a></li>
                     <li><a href="{% url 'page:select_product' 'dry_cured_sausage' %}">Колбаса сырокопченая</a></li>
                     <li><a href="{% url 'page:select_product' 'frankfurters' %}">Сосиски</a></li>
-                    <li><a href="{% url 'page:select_product' 'sausages' %}">Сардельки</a></li>
+                    <li><a href="{% url 'page:select_product' 'sausages_links' %}">Сардельки</a></li>
                 </ul>
             </li>
             <li>
-                <a href="{% url 'page:select_product' 'groceries' %}" class="category" data-category="grocery">Бакалия</a>
+                <a class="category" data-category="grocery">Бакалия</a>
                 <ul class="subcategory" id="grocery">
+                    <li><a href="{% url 'page:select_product' 'groceries' %}">Все в "Бакалия"</a></li>
                     <li><a href="{% url 'page:select_product' 'pasta' %}">Макаронные изделия</a></li>
                     <li><a href="{% url 'page:select_product' 'oil_vinegar' %}">Олия и уксус</a></li>
                     <li><a href="{% url 'page:select_product' 'spices_and_marinades' %}">Приправы и маринады</a></li>
@@ -34,8 +37,9 @@
                 </ul>
             </li>
             <li>
-                <a href="{% url 'page:select_product' 'fruits' %}" class="category" data-category="fruit">Фрукты</a>
+                <a class="category" data-category="fruit">Фрукты</a>
                 <ul class="subcategory" id="fruit">
+                    <li><a href="{% url 'page:select_product' 'fruits' %}">Все в "Фрукты"</a></li>
                     <li><a href="{% url 'page:select_product' 'apricots' %}">Абрикосы</a></li>
                     <li><a href="{% url 'page:select_product' 'pears' %}">Груши</a></li>
                     <li><a href="{% url 'page:select_product' 'apples' %}">Яблоки</a></li>
@@ -47,8 +51,9 @@
                 </ul>
             </li>
             <li>
-                <a href="{% url 'page:select_product' 'vegetables' %}" class="category" data-category="vegetables">Овощи</a>
+                <a class="category" data-category="vegetables">Овощи</a>
                 <ul class="subcategory" id="vegetables">
+                    <li><a href="{% url 'page:select_product' 'vegetables' %}">Все в "Овощи"</a></li>
                     <li><a href="{% url 'page:select_product' 'tomatoes' %}">Помидоры</a></li>
                     <li><a href="{% url 'page:select_product' 'cucumbers' %}">Огурцы</a></li>
                     <li><a href="{% url 'page:select_product' 'zucchini' %}">Кабачок</a></li>
@@ -68,8 +73,9 @@
                 </ul>
             </li>
             <li>
-                <a href="{% url 'page:select_product' 'baby_food' %}" class="category" data-category="baby-food">Детское питание</a>
+                <a class="category" data-category="baby-food">Детское питание</a>
                 <ul class="subcategory" id="baby-food">
+                    <li><a href="{% url 'page:select_product' 'baby_food' %}">Все в "Детское питание"</a></li>
                     <li><a href="{% url 'page:select_product' 'baby_purees' %}">Детское пюре</a></li>
                     <li><a href="{% url 'page:select_product' 'milk_formulas' %}">Молочные смеси</a></li>
                     <li><a href="{% url 'page:select_product' 'porridge' %}">Каши</a></li>
@@ -77,8 +83,9 @@
                 </ul>
             </li>
             <li>
-                <a href="{% url 'page:select_product' 'bakery_product' %}" class="category" data-category="bakery">Хлебобулочные изделия</a>
+                <a class="category" data-category="bakery">Хлебобулочные изделия</a>
                 <ul class="subcategory" id="bakery">
+                    <li><a href="{% url 'page:select_product' 'bakery_product' %}">Все в "Хлебобулочные изделия"</a></li>
                     <li><a href="{% url 'page:select_product' 'croissant' %}">Круассан</a></li>
                     <li><a href="{% url 'page:select_product' 'bread_loaf' %}">Батон</a></li>
                     <li><a href="{% url 'page:select_product' 'baguette' %}">Багет</a></li>
@@ -88,8 +95,9 @@
                 </ul>
             </li>
             <li>
-                <a href="{% url 'page:select_product' 'dairy_products_and_eggs' %}" class="category" data-category="dairy-eggs">Молочная продукция и яйца</a>
+                <a class="category" data-category="dairy-eggs">Молочная продукция и яйца</a>
                 <ul class="subcategory" id="dairy-eggs">
+                    <li><a href="{% url 'page:select_product' 'dairy_products_and_eggs' %}">Все в "Молочная продукция и яйца"</a></li>
                     <li><a href="{% url 'page:select_product' 'cottage_cheese' %}">Творог</a></li>
                     <li><a href="{% url 'page:select_product' 'milk' %}">Молоко</a></li>
                     <li><a href="{% url 'page:select_product' 'kefir' %}">Кефир</a></li>
@@ -101,8 +109,9 @@
                 </ul>
             </li>
             <li>
-                <a href="{% url 'page:select_product' 'cheeses' %}" class="category" data-category="cheese">Сыры</a>
+                <a class="category" data-category="cheese">Сыры</a>
                 <ul class="subcategory" id="cheese">
+                    <li><a href="{% url 'page:select_product' 'cheese' %}">Все в "Сыры"</a></li>
                     <li><a href="{% url 'page:select_product' 'mozzarella' %}">Моцарелла</a></li>
                     <li><a href="{% url 'page:select_product' 'roquefort' %}">Рокфор</a></li>
                     <li><a href="{% url 'page:select_product' 'dorblu' %}">Дорблю</a></li>
@@ -113,8 +122,9 @@
                 </ul>
             </li>
             <li>
-                <a href="{% url 'page:select_product' 'fish_and_seafood' %}" class="category" data-category="fish-seafood">Рыба и морепродукты</a>
+                <a class="category" data-category="fish-seafood">Рыба и морепродукты</a>
                 <ul class="subcategory" id="fish-seafood">
+                    <li><a href="{% url 'page:select_product' 'fish_and_seafood' %}">Все в "Рыба и морепродукты"</a></li>
                     <li><a href="{% url 'page:select_product' 'seafood' %}">Морепродукты</a></li>
                     <li><a href="{% url 'page:select_product' 'caviar' %}">Икра</a></li>
                     <li><a href="{% url 'page:select_product' 'crab_sticks' %}">Крабовые палочки</a></li>
@@ -122,8 +132,9 @@
                 </ul>
             </li>
             <li>
-                <a href="{% url 'page:select_product' 'non_alcohol' %}" class="category" data-category="non-alcoholic">Безалкогольные напитки</a>
+                <a class="category" data-category="non-alcoholic">Безалкогольные напитки</a>
                 <ul class="subcategory" id="non-alcoholic">
+                    <li><a href="{% url 'page:select_product' 'non_alcohol' %}">Все в "Безалкогольные напитки"</a></li>
                     <li><a href="{% url 'page:select_product' 'mineral_and_drinking_water' %}">Минеральная и питьевая вода</a></li>
                     <li><a href="{% url 'page:select_product' 'energy_drinks' %}">Энергетики</a></li>
                     <li><a href="{% url 'page:select_product' 'juices' %}">Соки</a></li>
@@ -132,8 +143,9 @@
                 </ul>
             </li>
             <li>
-                <a href="{% url 'page:select_product' 'alcohol' %}" class="category" data-category="alcohol">Алкогольные напитки</a>
+                <a class="category" data-category="alcohol">Алкогольные напитки</a>
                 <ul class="subcategory" id="alcohol">
+                    <li><a href="{% url 'page:select_product' 'alcohol' %}">Все в "Алкогольные напитки"</a></li>
                     <li><a href="{% url 'page:select_product' 'vodka' %}">Водка</a></li>
                     <li><a href="{% url 'page:select_product' 'rum' %}">Ром</a></li>
                     <li><a href="{% url 'page:select_product' 'liquor' %}">Ликеры</a></li>
@@ -143,8 +155,9 @@
                 </ul>
             </li>
             <li>
-                <a href="{% url 'page:select_product' 'sweets' %}" class="category" data-category="sweets">Сладости</a>
+                <a class="category" data-category="sweets">Сладости</a>
                 <ul class="subcategory" id="sweets">
+                    <li><a href="{% url 'page:select_product' 'sweets' %}">Все в "Сладости"</a></li>
                     <li><a href="{% url 'page:select_product' 'candies' %}">Конфеты</a></li>
                     <li><a href="{% url 'page:select_product' 'chocolate' %}">Шоколад</a></li>
                     <li><a href="{% url 'page:select_product' 'cakes' %}">Торты</a></li>
@@ -156,8 +169,9 @@
                 </ul>
             </li>
             <li>
-                <a href="{% url 'page:select_product' 'sneaks' %}" class="category" data-category="snacks">Снеки</a>
+                <a class="category" data-category="snacks">Снеки</a>
                 <ul class="subcategory" id="snacks">
+                    <li><a href="{% url 'page:select_product' 'sneaks' %}">Все в "Снеки"</a></li>
                     <li><a href="{% url 'page:select_product' 'chips' %}">Чипсы</a></li>
                     <li><a href="{% url 'page:select_product' 'nuts' %}">Орешки</a></li>
                     <li><a href="{% url 'page:select_product' 'crackers' %}">Сухарики</a></li>
