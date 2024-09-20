@@ -1,5 +1,7 @@
 {% extends 'page/base.html' %}
 
+{% block title %}Аккаунт{% endblock %}
+
 {% block content %}
 	{% if user.is_authenticated %}
 		<p class="hello">Привет, {{ user.username }}</p>
